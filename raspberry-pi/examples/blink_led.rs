@@ -5,8 +5,9 @@ use std::time::Duration;
 use rppal::gpio::Gpio;
 use rppal::system::DeviceInfo;
 
-// Gpio uses BCM pin numbering. BCM GPIO 23 is tied to physical pin 16.
-const GPIO_LED: u8 = 23;
+// Gpio uses BCM pin numbering. BCM GPIO 23 is tied to physical pin 16
+// Could be a config or asked in command line by user.
+const GPIO_LED: u8 = 20;
 
 fn main() {
     match run() {
