@@ -1,7 +1,6 @@
 use linux_embedded_hal::I2cdev;
 use embedded_hal::i2c::I2c;
-use std::{f64::consts::LOG10_2, sync::{Arc, Mutex}};
-use std::f64;
+use std::sync::{Arc, Mutex};
 
 pub const I2C_DEV_PATH: &str = "/dev/i2c-1"; // Use correct I2C bus here
 pub const ADS7830_ADDR: u16 = 0x4b;
