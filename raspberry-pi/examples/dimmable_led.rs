@@ -1,7 +1,7 @@
 use std::{f64::consts::LOG10_2, process::exit, sync::{Arc, Mutex}, thread, time::Duration};
 
 use linux_embedded_hal::I2cdev;
-use raspberry_pi::adc7830::{values, I2C_DEV_PATH};
+use raspberry_pi::ads7830::{values, I2C_DEV_PATH};
 use rppal::pwm::Polarity;
 use rppal::pwm::{Channel, Pwm};
 
